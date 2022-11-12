@@ -1,0 +1,159 @@
+{
+  "totems": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "C/ Colón - C/ Cabanyal",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-0.347288, 39.500808],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "C/ Colón - C/ Mercat Municipal",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-0.348176, 39.499170],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "C/ Benimaclet 1",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-0.348982, 39.497706],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Piscina - Camp de Futbol",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-0.356073, 39.500518],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Divi Mestre - Raco de Sant Llorenç",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-0.355054, 39.501113],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Carraixet - Cami del Gaiato",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-0.343751, 39.506383],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Les Tendes 1 (Direcció Saplaya)",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-0.336736, 39.511856],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Santa Barbara - Gasolinera",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-0.332551, 39.510335],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Avinguda L'Horta, 19",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-0.322916, 39.511297],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Avinguda L'Horta - Carrer Batlle",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-0.321527, 39.513034],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Avinguda L'Horta, 37",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-0.320474, 39.514803],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Blasco Ibáñez - Rotonda EMT31",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-0.328280, 39.485156],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Mare Nostrum - Blasco Ibáñez (EMT31)",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-0.326188, 39.485404],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Mare Nostrum - Gral. Joan Baptista Basset i Ramos",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-0.325631, 39.489471],
+        "type": "Point"
+      }
+    }
+  ],
+  "type": "FeatureCollection"
+}

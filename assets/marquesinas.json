@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "longitud": "-0.346884",
+    "latitud": "39.501932",
+    "direcc": "C/ Meliana - CEIP Cervantes",
+    "tie": "0"
+  },
+  {
+    "id": "5",
+    "longitud": "-0.350819",
+    "latitud": "39.495976",
+    "direcc": "Av. Ausías March - Pintor Peris Aragó",
+    "tie": "0"
+  },
+  {
+    "id": "6",
+    "longitud": "-0.354239",
+    "latitud": "39.496900",
+    "direcc": "Tribunal de les Aigües - Metro Palmaret",
+    "tie": "0"
+  },
+  {
+    "id": "10",
+    "longitud": "-0.352313",
+    "latitud": "39.499963",
+    "direcc": "Divi Mestre - Metro Peris Aragó",
+    "tie": "0"
+  },
+  {
+    "id": "11",
+    "longitud": "-0.350952",
+    "latitud": "39.498852",
+    "direcc": "C/ Botanic Cavenilles 10",
+    "tie": "0"
+  },
+  {
+    "id": "12",
+    "longitud": "-0.347625",
+    "latitud": "39.497434",
+    "direcc": "C/ Botanic Cavenilles - Passeig d'Aragó",
+    "tie": "0"
+  },
+  {
+    "id": "13",
+    "longitud": "-0.346131",
+    "latitud": "39.500880",
+    "direcc": "Ronda Est - Gasolinera",
+    "tie": "0"
+  },
+  {
+    "id": "17",
+    "longitud": "-0.336154",
+    "latitud": "39.511613",
+    "direcc": "Les Tendes 2",
+    "tie": "0"
+  },
+  {
+    "id": "19",
+    "longitud": "-0.322621",
+    "latitud": "39.508009",
+    "direcc": "Saplaya - Parada Central",
+    "tie": "0"
+  },
+  {
+    "id": "25",
+    "longitud": "-0.326666",
+    "latitud": "39.492934",
+    "direcc": "Blasco Ibáñez - IES Patacona",
+    "tie": "0"
+  },
+  {
+    "id": "26",
+    "longitud": "-0.327501",
+    "latitud": "39.487729",
+    "direcc": "Blasco Ibáñez - Centro Deportivo",
+    "tie": "0"
+  },
+  {
+    "id": "30",
+    "longitud": "-0.325436",
+    "latitud": "39.491379",
+    "direcc": "Mare Nostrum 7",
+    "tie": "0"
+  }
+]

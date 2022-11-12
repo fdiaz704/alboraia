@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "name": "Rusiñol",
+    "distance": "0,2 kms.",
+    "nro": "6",
+    "disp": "4",
+    "latitud": "39.4970238",
+    "longitud": "-0.3695309",
+    "type": "Bicicletas"
+  },
+  {
+    "id": "2",
+    "name": "Constituciò",
+    "distance": "0,35 kms.",
+    "nro": "6",
+    "disp": "4",
+    "latitud": "39.4945655",
+    "longitud": "-0.3720166",
+    "type": "Bicicletas"
+  },
+  {
+    "id": "3",
+    "name": "IPark Ayuntamiento",
+    "distance": "8,6 kms.",
+    "nro": "6",
+    "disp": "4",
+    "latitud": "39.4970238",
+    "longitud": "-0.3695309",
+    "type": "Bicicletas"
+  },
+  {
+    "id": "4",
+    "name": "IPark Ayuntamiento",
+    "distance": "8,6 kms.",
+    "nro": "6",
+    "disp": "4",
+    "latitud": "39.4970238",
+    "longitud": "-0.3695309",
+    "type": "Bicicletas"
+  }
+]
