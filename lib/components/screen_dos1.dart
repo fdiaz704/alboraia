@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 
 import 'package:alboraia/constants/provider.dart' as Globals;
 import 'package:alboraia/main.dart';
+import 'package:alboraia/clases.dart';
 
 class Screen2 extends StatelessWidget {
   Screen2({Key? key}) : super(key: key);

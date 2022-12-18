@@ -83,6 +83,7 @@ flutter:
     - assets/usuario.png
     - assets/totems.json
     - assets/marquesinas.json
+    - assets/recorrido.json
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

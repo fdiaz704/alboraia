@@ -1,97 +1,97 @@
 [
   {
-    "id": "2",
+    "id": 2,
     "longitud": "-0.347288",
     "latitud": "39.500808",
     "direcc": "C/Colón - C/Cabanyal",
     "tie": "0"
   },
   {
-    "id": "3",
+    "id": 3,
     "longitud": "-0.348176",
     "latitud": "39.499170",
     "direcc": "C/Colón - Mercat Municipal",
     "tie": "0"
   },
   {
-    "id": "4",
+    "id": 4,
     "longitud": "-0.348982",
     "latitud": "39.497706",
     "direcc": "C/Benimaclet 1",
     "tie": "0"
   },
   {
-    "id": "7",
+    "id": 7,
     "longitud": "-0.356073",
     "latitud": "39.500518",
     "direcc": "Piscina Camp de futbol",
     "tie": "0"
   },
   {
-    "id": "9",
+    "id": 9,
     "longitud": "-0.355054",
     "latitud": "39.501113",
     "direcc": "Divi Mestre - Raco de Sant Llorenç",
     "tie": "0"
   },
   {
-    "id": "14",
+    "id": 14,
     "longitud": "-0.343751",
     "latitud": "39.506383",
     "direcc": "Carraixet - Cami del Gaiato",
     "tie": "0"
   },
   {
-    "id": "16",
+    "id": 16,
     "longitud": "-0.336736",
     "latitud": "39.511856",
     "direcc": "Les Tendes 1",
     "tie": "0"
   },
   {
-    "id": "18",
+    "id": 18,
     "longitud": "-0.332551",
     "latitud": "39.510335",
     "direcc": "Santa Bárbara - Gasolinera",
     "tie": "0"
   },
   {
-    "id": "21",
+    "id": 21,
     "longitud": "-0.322916",
     "latitud": "39.511297",
     "direcc": "Av. L'Horta, 19",
     "tie": "0"
   },
   {
-    "id": "22",
+    "id": 22,
     "longitud": "-0.321527",
     "latitud": "39.513034",
     "direcc": "Av. L'Horta - Carrer Batlle",
     "tie": "0"
   },
   {
-    "id": "23",
+    "id": 23,
     "longitud": "-0.320474",
     "latitud": "39.514803",
     "direcc": "Av. L'Horta, 37",
     "tie": "0"
   },
   {
-    "id": "27",
+    "id": 27,
     "longitud": "-0.328280",
     "latitud": "39.485156",
     "direcc": "Blasco Ibáñez . rot. EMT31",
     "tie": "0"
   },
   {
-    "id": "28",
+    "id": 28,
     "longitud": "-0.326188",
     "latitud": "39.485404",
     "direcc": "Mare Nostrum - Blasco Ibáñez (EMT31)",
     "tie": "0"
   },
   {
-    "id": "29",
+    "id": 29,
     "longitud": "-0.325631",
     "latitud": "39.489471",
     "direcc": "Mare Nostrum - Gral. Joan Basset",

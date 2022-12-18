@@ -15,15 +15,12 @@ import 'package:http/http.dart' as http;
 import 'package:alboraia/constants/constants_bdd_1.dart';
 // import 'package:alboraia/models/promotions.dart';
 // import 'package:alboraia/models/documentation.dart';
-import 'package:alboraia/components/screen_dos1.dart';
+import 'package:alboraia/components/screen_dos.dart';
 // import 'package:alboraia/components/abonos.dart';
 // import 'package:alboraia/components/tickets.dart';
 import 'package:alboraia/database/bdd_aparcabicis1.dart';
 import 'package:alboraia/constants/provider.dart' as Globals;
-import 'package:alboraia/clases.dart';
 
-Map<int, dynamic>? control = {};
-Map<int, String>? desc = {};
 List jsonResult = [];
 List<Marker> allBusStops = [];
 List<LatLng> polylineCoordinates = [];
@@ -32,11 +29,7 @@ String googleAPiKey = "AIzaSyAr74HUqgxFQCOZ4N7cQk270hzQxoYZPL4";
 
 @override
 Future<void> loadJson() async {
-// Inicializa map de id de estructura y tiempo estimado de llegada
-
-  control?.clear();
-
-// API key SAE
+  // API key SAE
 
   var request1 = http.Request(
       'POST',
@@ -44,21 +37,7 @@ Future<void> loadJson() async {
           'https://smalboraia.r3smartcity.es/SAE_Alboraya/Paradas_info/key.php'));
   var streamedResponse1 = await request1.send();
   var response1 = await http.Response.fromStream(streamedResponse1);
-
-// List con predicción SAE
-
   final result1 = jsonDecode(response1.body);
-
-// carga prediccion SAE en 2 maps - control y desc
-
-  for (var clave in result1) {
-    JsonEntrada intermedio = JsonEntrada(clave);
-
-    var identif = intermedio.mapa['id_totem'];
-
-    control![identif] = intermedio.mapa['time'];
-    desc![identif] = intermedio.mapa['desc'];
-  }
 
   var uwu4 = result1;
 
@@ -72,98 +51,38 @@ Future<void> loadJson() async {
   // Incopora los map markers de los tótems a la lista de map markers
 
   String uwuFinal = "";
-  var find;
-  for (var element in jsonResult) {
-    JsonEntrada uno = JsonEntrada(element);
-    find = uno.mapa['id'];
+  for (int i = 0; i < jsonResult.length; i++) {
+    String uwu = (jsonResult[i]['direcc']);
+    String uwu1 = (jsonResult[i]['id']);
+    String? min;
+    print(uwu1);
+
     allBusStops.add(
       Marker(
-          point: LatLng(double.parse(uno.mapa['latitud']),
-              double.parse(uno.mapa['longitud'])),
+          point: LatLng(double.parse(jsonResult[i]['latitud']),
+              double.parse(jsonResult[i]['longitud'])),
           width: 35,
           height: 35,
           builder: (context) => GestureDetector(
               onTap: () {
-                String? aver1, min;
-                find = uno.mapa['id'];
-                // for (var element in jsonResult) {
-                // JsonEntrada uno = JsonEntrada(element);
-                // int find = uno.mapa['id'];
-                int? uwuFinal;
-                if (control!.containsKey(find)) {
-                  uwuFinal = control![find];
-                  min = "m";
-                  //int aver = find;
-                  aver1 = desc![find];
-                  print(uno.mapa['id']);
-                  print(find);
-                  print(aver1);
-                  // break;
-
-                  // print("$aver1 en $uwuFinal $min");
-                } else {
-                  min = "";
-                  aver1 = uno.mapa['direcc'];
+                for (int i = 0; i < uwu4.length; i++) {
+                  print(uwu1);
+                  print(uwu4[i]['id_totem'].toString());
+                  if (uwu4[i]['id_totem'].toString() == uwu1) {
+                    uwuFinal = uwu4[i]['time'].toString();
+                    min = "min";
+                    break;
+                  } else {
+                    min = "";
+                  }
                 }
-                // }
                 ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                  content: Text('$aver1 a $uwuFinal $min'),
+                  content: Text('$uwu - $uwuFinal $min'),
                 ));
-
-                // if(control.containsKey(find)) {
-                //   uwuFinal = control[find];
-                //   var min = "m";
-                // } else {
-                //   var min = "";
-                // }
-                // for (var element1 in result1) {
-                //   JsonAPI dos = JsonAPI(element1);
-                //   if (dos.mapa1.)
-                //   uwuFinal = dos.mapa1['time'];
-                //   if (uwu4[i]['id_totem'].toString() == uwu1) {
-                //     uwuFinal = uwu4[i]['time'].toString();
-                //     min = "min";
-                //     break;
-                //   } else {
-                //     min = "";
-                //   }
-                // }
               },
               child: const Image(image: AssetImage('assets/psaplaya.png')))),
     );
   }
-  // for (int i = 0; i < jsonResult.length; i++) {
-  //   String uwu = (jsonResult[i]['direcc']);
-  //   String uwu1 = (jsonResult[i]['id']);
-  //   String? min;
-  //   print(uwu1);
-
-  //   allBusStops.add(
-  //     Marker(
-  //         point: LatLng(double.parse(jsonResult[i]['latitud']),
-  //             double.parse(jsonResult[i]['longitud'])),
-  //         width: 35,
-  //         height: 35,
-  //         builder: (context) => GestureDetector(
-  //             onTap: () {
-  //               for (int i = 0; i < uwu4.length; i++) {
-  //                 print(uwu1);
-  //                 print(uwu4[i]['id_totem'].toString());
-  //                 if (uwu4[i]['id_totem'].toString() == uwu1) {
-  //                   uwuFinal = uwu4[i]['time'].toString();
-  //                   min = "min";
-  //                   break;
-  //                 } else {
-  //                   min = "";
-  //                 }
-  //               }
-  //               ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-  //                 content: Text('$uwu - $uwuFinal $min'),
-  //               ));
-  //             },
-  //             child: const Image(image: AssetImage('assets/psaplaya.png')))),
-  //   );
-  // }
 
 // Lectura del JSON con todos los tótems instalados
 
@@ -174,7 +93,7 @@ Future<void> loadJson() async {
 
   for (int i = 0; i < jsonResult.length; i++) {
     String uwu = (jsonResult[i]['direcc']);
-    int uwu1 = (jsonResult[i]['id']);
+    String uwu1 = (jsonResult[i]['id']);
     String? min;
     allBusStops.add(
       Marker(
